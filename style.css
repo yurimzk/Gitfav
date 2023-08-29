@@ -17,6 +17,7 @@
   --color-table-border: rgb(74, 128, 140);
   --color-thead-bg: rgb(9, 45, 56);
   --color-table-text: rgb(225, 225, 230);
+  --color-btn-remove: rgb(247, 90, 104);
 }
 
 /* font-family: 'Roboto Mono', monospace; */
@@ -109,6 +110,58 @@ table {
 }
 
 thead {
+  display: flex;
+}
+
+thead th {
   background-color: var(--color-thead-bg);
   color: var(--color-table-text);
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 160%;
+
+  padding: 1.6rem 2.4rem 1.6rem 4.0rem;
+  align-items: flex-start;
+}
+
+tr td {
+  padding: 2.4rem 2.4rem 2.4rem 4.0rem;
+  color: var(--color-table-text);
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.user a {
+  text-decoration: none;
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 160%;
+  color: var(--color-table-text);
+}
+
+.user span {
+  font-weight: 400;
+}
+
+.user img {
+  width: 5.6rem;
+  height: 5.6rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.action button {
+  color: var(--color-btn-remove);
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 160%;
+
+  border: 0;
 }
