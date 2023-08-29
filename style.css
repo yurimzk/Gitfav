@@ -14,6 +14,9 @@
   --color-input-text: rgb(124, 124, 138);
   --color-btnfav-bg: rgb(6, 94, 124);
   --color-btnfav-text: rgb(255, 255, 255);
+  --color-table-border: rgb(74, 128, 140);
+  --color-thead-bg: rgb(9, 45, 56);
+  --color-table-text: rgb(225, 225, 230);
 }
 
 /* font-family: 'Roboto Mono', monospace; */
@@ -97,4 +100,15 @@ input:focus {
 
 .btn-fav:hover .btn-icon rect {
   fill: var(--color-btnfav-text);
+}
+
+table {
+  width: 100%;
+  border: 1px solid var(--color-table-border);
+  border-radius: 1.2rem;
+}
+
+thead {
+  background-color: var(--color-thead-bg);
+  color: var(--color-table-text);
 }
